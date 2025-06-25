@@ -1,0 +1,47 @@
+[
+  {
+    "fields": [
+      {
+        "name": "name",
+        "type": "string",
+        "title": "Nombre"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "name": "price",
+        "type": "number",
+        "title": "Precio"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Imagen"
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "title": "Descripción"
+      }
+    ],
+    "name": "product",
+    "type": "document",
+    "title": "Producto"
+  }
+]
